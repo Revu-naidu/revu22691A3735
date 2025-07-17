@@ -2,7 +2,7 @@
 
 A fully functional, responsive URL shortener built with React that operates entirely client-side using localStorage for data persistence.
 
-## 🚀 Features
+##  Features
 
 - **URL Shortening**: Create short URLs with custom or auto-generated codes
 - **Batch Processing**: Shorten up to 5 URLs simultaneously
@@ -12,7 +12,7 @@ A fully functional, responsive URL shortener built with React that operates enti
 - **Custom Logging**: Comprehensive logging middleware (no console.log usage)
 - **Responsive Design**: Works seamlessly on mobile and desktop
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Data Model
 ```typescript
@@ -75,7 +75,7 @@ The application uses React Router's dynamic routing to handle shortcode redirect
 4. Records click analytics
 5. Redirects to the original URL
 
-## 🔧 Key Implementation Details
+##  Key Implementation Details
 
 ### Assumptions Made
 
@@ -91,7 +91,7 @@ The application uses React Router's dynamic routing to handle shortcode redirect
 3. **Custom Logging**: Implemented instead of console.log to provide structured, reviewable logs
 4. **Component Isolation**: Each component has a single responsibility with clear data flow
 
-## 🚦 Running the Application
+##  Running the Application
 
 1. Install dependencies:
    ```bash
@@ -105,7 +105,7 @@ The application uses React Router's dynamic routing to handle shortcode redirect
 
 3. Access the application at `http://localhost:3000`
 
-## 📊 Usage
+##  Usage
 
 1. **Create Short URLs**:
    - Enter original URL(s)
@@ -123,7 +123,7 @@ The application uses React Router's dynamic routing to handle shortcode redirect
    - Click events are automatically tracked
    - Expired URLs show appropriate error messages
 
-## 🔐 Data Storage
+##  Data Storage
 
 All data is stored in browser's localStorage under two keys:
 - `shortened_urls`: Array of ShortenedUrl objects
@@ -134,7 +134,7 @@ Data persists until:
 - localStorage quota is exceeded
 - User manually deletes data
 
-## 🛠️ Error Handling
+##  Error Handling
 
 - React Error Boundaries for component-level errors
 - Try-catch blocks for data operations
@@ -142,7 +142,7 @@ Data persists until:
 - Graceful degradation for expired/missing URLs
 - Comprehensive logging for debugging
 
-## 🎯 Future Enhancements
+## Future Enhancements
 
 - QR code generation for short URLs
 - Bulk URL import/export
